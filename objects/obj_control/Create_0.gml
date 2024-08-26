@@ -21,23 +21,3 @@ surface_resize(application_surface, TELAW, TELAH);
 window_set_size(TELAW*2, TELAH*2);
 
 
-
-//espaço separado para o obj_player_grid
-#region player movimento por grid
-size_grid = 16;
-col = room_width / size_grid;
-lin = room_height / size_grid;
-
-function pos_grid(_x, _y){
-	var _grid_x = floor(x / size_grid);
-	var _grid_y = floor(y / size_grid);
-	return[_grid_x, _grid_y];
-}
-
-function grid_pos(_grid_x, _grid_y){
-	var _x = _grid_x * size_grid;
-	var _y = _grid_y * size_grid;
-	return [_x, _y];
-}
-
-#endregion
