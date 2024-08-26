@@ -1,7 +1,13 @@
 at the moment: 
 
-grid - 16x 
-grid movement 
+grid - 16x (complete)
 
-movement (free) 
-collision (free)
+grid movement (complete)
+
+grid collision (complete)
+
+////////////////////////////
+
+movement (free) (complete)
+
+collision (free) (complete)
