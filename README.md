@@ -1,13 +1,18 @@
 at the moment: 
 
-grid - 16x (complete)
+grid - 16x       (grid) (complete)
 
-grid movement (complete)
+grid movement    (grid) (complete)
 
-grid collision (complete)
+grid collision   (grid) (complete)
 
 ////////////////////////////
 
-movement (free) (complete)
+movement         (free) (complete)
 
-collision (free) (complete)
+collision        (free) (complete)
+
+/////////////////////////////
+camera           (free) (grid) (complete)
+room transaction (free) (grid) (complete)
+
