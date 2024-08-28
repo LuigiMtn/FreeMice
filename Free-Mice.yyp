@@ -35,6 +35,7 @@
   },
   "name":"Free-Mice",
   "resources":[
+    {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
     {"id":{"name":"obj_col","path":"objects/obj_col/obj_col.yy",},},
     {"id":{"name":"obj_control","path":"objects/obj_control/obj_control.yy",},},
     {"id":{"name":"obj_player_grid","path":"objects/obj_player_grid/obj_player_grid.yy",},},
