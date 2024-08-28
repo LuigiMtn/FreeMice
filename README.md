@@ -13,6 +13,8 @@ movement         (free) (complete)
 collision        (free) (complete)
 
 /////////////////////////////
+
 camera           (free) (grid) (complete)
+
 room transaction (free) (grid) (complete)
 
