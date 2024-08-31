@@ -6,6 +6,7 @@ kleft	= keyboard_check(ord("A"));
 kup		= keyboard_check(ord("W"));
 kdown	= keyboard_check(ord("S"));
 
+
 switch(state){
 	case state_player.free:
 		 state_free();

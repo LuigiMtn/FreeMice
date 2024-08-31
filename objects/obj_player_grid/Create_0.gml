@@ -12,6 +12,9 @@ moving = false;
 //game fell 
 xstrech = 0;
 ystrech = 0;
+tempoefeitofumaca = 0;
+
+face = 1;
 
 //estado
 state = state_player.free;
@@ -22,10 +25,18 @@ door_time = 0;
 
 #region states
 state_free = function(){
+	#region move
 	if(!moving){
+
 	 //Movimento
 	 moveh = (kright - kleft);
 	 movev = (kdown  - kup);
+	 //face
+	 if moveh > 0{
+		face = 1;	
+	}else if moveh < 0{
+		face = -1;	
+	}
 	 //debug
 	 show_debug_message("gx: " + string(moveh));
 	 show_debug_message("gy: " + string(movev));
@@ -50,6 +61,7 @@ state_free = function(){
 	}
 
 	if(moving){
+
 		x = lerp(x, target_x, 0.2);
 		y = lerp(y, target_y, 0.2);
 		if(point_distance(x, y, target_x, target_y) <1){
@@ -58,5 +70,6 @@ state_free = function(){
 			moving = false;
 		}
 	}
+	#endregion
 }
 #endregion

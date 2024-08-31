@@ -68,3 +68,54 @@ enum state_player
 		}
 	}
 #endregion
+
+
+#region efeitos (game feel)
+
+function cria_efeito(_x, _y, _spr){
+	var ef = instance_create_depth(_x, _y, depth+1, obj_efeito);
+	ef.sprite_index = _spr;
+	
+	return(ef);
+}
+
+function screenshake(treme, tempo){
+	if (!instance_exists(obj_screenshake)){
+		var ss = instance_create_depth(x, y, depth, obj_screenshake);
+		ss.treme = treme;
+		ss.alarm[0] = tempo;
+	}
+}
+	
+//Não é a sombra do player
+function draw_shadow(){
+	//	
+	draw_set_alpha(0.5);
+	draw_set_color(c_black);
+		//VOLTAR AQUI DEPOIS
+	draw_set_alpha(1);
+	draw_set_color(-1);
+	
+	
+}
+
+#endregion
+
+#region transicao room
+
+function sala_transacao(_destino){
+	if instance_exists(obj_camera){
+		with(obj_camera){
+			if (tempotransicao = 0){
+				global.ultimasala = room;
+				
+				tempotransicao = 1;
+				destino = _destino;
+				transicaoindo = 0;
+			}
+		}
+	}
+}
+
+#endregion
+
