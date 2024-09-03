@@ -6,10 +6,10 @@ global.vidamax = 4;
 global.vida = global.vidamax;
 
 // Controle de som
-global.volsound = 0.5;
-global.volmusic = 0.5;
+global.somvol = 0.5;
+global.musvol = 0.5;
 
-// Contra corrido de entrar e sair de portas!! (não use isso)
+// Sistema corrido de entrar e sair de portas!! (não use isso)
 global.ultimasala = room_first;
 global.novasalax = -1;
 global.novasalay = -1;

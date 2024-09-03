@@ -13,10 +13,12 @@ if place_meeting(x, y, obj_mouse){
 		lado0_vert = lerp(lado0_vert, -8, 0.2);	
 	}
 	
-	
 	//Clique no botão
 	if (mouse_check_button_released(mb_left) && desativar_ao_clicar != 2){
 		botaofunc();
+		if !audio_is_playing(snd_button_sound){
+			som(snd_button_sound);
+		}
 		//adicionar audio
 		
 		if(desativar_ao_clicar = true){

@@ -3,15 +3,6 @@
 
 #region transicao
 
-/// Esse código é do convenient, da nonejam 4.... qualquer um pode roubar um source code da jam,
-//  por que não copiar o meu próprio código? M E T A
-if(global.debug){
-	tempotransicao++;	
-}
-
-
-/// Transicao
-
 //Tempotransicao diretamente ligado ao crescimento das barras
 if (tempotransicao > 0){
 	// transicaoindo = 0

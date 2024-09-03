@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"mus_bossa8bit",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":59.61145,
+  "name":"mus_bossa8bit",
+  "parent":{
+    "name":"snd_musica",
+    "path":"folders/Sounds/snd_musica.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"mus_bossa8bit.mp3",
+  "type":0,
+  "volume":1.0,
+}

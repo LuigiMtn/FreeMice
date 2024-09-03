@@ -119,3 +119,18 @@ function sala_transacao(_destino){
 
 #endregion
 
+
+#region Som e Musica
+
+function som(snd)
+{
+	audio_play_sound(snd,1,false);
+	audio_sound_gain(snd,global.somvol,0);
+}
+function musica(mus)
+{
+	audio_play_sound(mus,1,true);
+	audio_sound_gain(mus,global.musvol,0);
+}
+
+#endregion
