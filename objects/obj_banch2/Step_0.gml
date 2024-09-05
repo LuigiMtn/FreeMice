@@ -17,24 +17,57 @@ var c_banch_up = instance_place(x, bbox_top - 1, obj_banch2);
 //baixo
 var c_banch_down =  !instance_place(x, bbox_top + 1, obj_banch2)
 
-
+#region banchxbanch
 //escolhendo topos
-if(c_col or c_col2) and (c_vdir or c_vdir2){
+if(c_col or c_col2) and c_vdir{
 	image_index = 0;	
-}else if(c_col or c_col2) and (c_vesq or c_vesq2){
+}else if(c_col or c_col2) and c_vesq{
 	image_index = 3;	
 }
 
 //centro
-if(c_banch_up and (c_vdir or c_vdir2)){
+if(c_banch_up and c_vdir){
 	image_index = 1;
-}else if(c_banch_up and (c_vesq or c_vesq2)){
+}else if(c_banch_up and c_vesq){
 	image_index = 4;
 }
 
 //baixo
-if(c_banch_down and (c_vdir or c_vdir2)){
+if(c_banch_down and c_vdir){
 	image_index = 2;
-}else if(c_banch_down and (c_vesq or c_vesq2)){
+}else if(c_banch_down and c_vesq){
 	image_index = 5;	
 }
+#endregion
+
+
+#region banchxwall
+//TOPO
+//verificando parede
+if(c_col or c_col2) and c_vdir2{
+	image_index = 0;	
+}else if(c_col or c_col2) and c_vesq2{
+	image_index = 3;
+}
+
+//CENTRO
+if(c_banch_up and c_vdir2){
+	image_index = 1;
+}else if (c_banch_up and c_vesq2){
+	image_index = 4;
+}
+
+//BAIXO
+if(c_banch_down and c_vdir2){
+	image_index = 2;
+}else if (c_banch_down and c_vesq2){
+	image_index = 5;
+}
+
+
+
+#endregion
+
+
+//(c_vdir or c_vdir2)
+//(c_vesq or c_vesq2)
