@@ -1,4 +1,4 @@
-texto = "Reset janela"
+texto = "Resetar janela"
 
 botaofunc = function(){
 	if !window_get_fullscreen(){

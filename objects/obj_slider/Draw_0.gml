@@ -6,7 +6,12 @@ alteravalor()
 var xsel = x + sprite_width * val;
 
 
+
+draw_set_font(fnt_open);
+
 draw_text(x+(sprite_width/2)-(string_width(texto)/2), y-15, texto);
+
+draw_set_font(-1);
 
 
 draw_sprite(spr_slide, 1, x, y);

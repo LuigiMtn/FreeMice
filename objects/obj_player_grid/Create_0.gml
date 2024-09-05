@@ -2,8 +2,8 @@
 // Você pode escrever seu código neste editor
 #region variables
 //Posição do grid
-grid_x = 5;
-grid_y = 5;
+grid_x = 3;
+grid_y = 4;
 //movimento
 moveh  = 0;
 movev  = 0;

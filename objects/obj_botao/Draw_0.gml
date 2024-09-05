@@ -2,6 +2,7 @@
 // Você pode escrever seu código neste editor
 draw_sprite_ext(sprite_index, image_index, x, y + lado0_vert, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
 
+draw_set_font(fnt_open);
 draw_set_color(c_black);
 
 var yy = y + 8 + lado0_vert;
@@ -16,3 +17,4 @@ if lado = -1 { draw_text (bbox_right-(textow)-40, yy, texto);}
 if lado = 0  { draw_text (x+(sprite_width/2)-(textow/2), yy, texto);}
 
 draw_set_color(c_white);
+draw_set_font(-1);
