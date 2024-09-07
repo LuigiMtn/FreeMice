@@ -1,9 +1,11 @@
 /// @description Inserir descrição aqui
 // Você pode escrever seu código neste editor
 #region variables
-//Posição do grid
-grid_x = 3;
-grid_y = 4;
+//Posição do grid (DEFINIDO PELO SPAWN)
+if(instance_exists(obj_spawn_base)){
+	grid_x = obj_spawn_base.start_x;
+	grid_y = obj_spawn_base.start_y+1;
+}
 //movimento
 moveh  = 0;
 movev  = 0;
