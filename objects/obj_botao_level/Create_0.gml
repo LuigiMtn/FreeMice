@@ -2,6 +2,10 @@
 // Você pode escrever seu código neste editor
 
 texto = "AAAAA";
+nivel = noone;
+
+verificado = false;
+
 botaofunc = function(){}
 
 desativar_ao_clicar = true;
@@ -11,4 +15,6 @@ if bbox_left < 0           { lado = -1;}
 if bbox_right > room_width { lado = 1; } 
 
 lado0_vert = 0;
+
+image_index = 0;
 

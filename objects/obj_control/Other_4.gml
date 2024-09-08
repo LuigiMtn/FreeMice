@@ -9,6 +9,6 @@ if (!instance_exists(obj_camera)){
 	instance_create_depth(x, y, depth, obj_camera);	
 }
 
-if room = Room_Menu || room = Room1{
+if room = Room_Menu || room = Room_Levels || room = Room1 {
 	musica(mus_bossa8bit);	
 }

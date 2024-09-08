@@ -14,6 +14,13 @@ global.ultimasala = room_first;
 global.novasalax = -1;
 global.novasalay = -1;
 
+//Salas que o player tem acesso
+global.sala1 = true;
+global.sala2 = false;
+global.sala3 = false;
+global.sala4 = false;
+global.sala5 = false;
+
 // tela
 // melhore a qualidade de subpixels e sprites rotacionados 
 surface_resize(application_surface, TELAW, TELAH);
